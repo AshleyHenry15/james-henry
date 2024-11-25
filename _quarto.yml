@@ -14,7 +14,12 @@ website:
         text: Stats
       - href: playing.qmd
         text: Playing
-
+    right:
+      - icon: "file-earmark-person"
+        href: assets/James-Henry-Resume.docx
+        aria-label: "Click to download my resume"
+      - icon: images/favicon.ico
+        href: wwww.google.com
 format:
   html:
     theme: cosmo
