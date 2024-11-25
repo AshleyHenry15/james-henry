@@ -1,0 +1,60 @@
+---
+title: Stats
+execute:
+  echo: false
+  warning: false
+html:
+  fig-align: right
+---
+
+## Coaching
+
+### Reading Royals - Head Coach
+
+#### Wins / Losses
+
+```{python, echo=false}
+import matplotlib.pyplot as plt
+
+# Data for the pie chart
+wins = 55
+losses = 44
+ot_losses = 10
+total_games = wins + losses + ot_losses
+
+# Labels and sizes for the pie chart
+labels = ['Wins', 'Losses', 'Overtime Losses']
+sizes = [wins, losses, ot_losses]
+colors = ['#77379A', '#AAB2B9', '#FF9800']  # Green, Red, Orange for the slices
+
+# Plot the pie chart
+fig, ax = plt.subplots()
+ax.pie(sizes, labels=labels, autopct='%1.1f%%', colors=colors, startangle=90, wedgeprops={'edgecolor': 'black'})
+
+# Title of the pie chart
+ax.set_title('')
+
+# Set background color to transparent for the figure and axes
+fig.patch.set_facecolor('none')   # Remove figure background color
+ax.set_facecolor('none')          # Remove axes background color
+
+
+# Equal aspect ratio ensures that pie chart is drawn as a circle.
+ax.axis('equal')
+
+# Show the plot
+plt.show()
+```
+
+
+## Player
+
+| GP| G | A | PTS |
+|---|-|-|-|
+| 441  | 93 | 216 | 309 |
+: ECHL {.striped .hover}
+
+| GP| G | A | PTS |
+|---|-|-|-|
+| 309  | 72 | 144 | 214 |
+: WHL {.striped .hover}

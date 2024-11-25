@@ -1,0 +1,25 @@
+project:
+  type: website
+
+website:
+  title: "James Henry"
+  favicon: images/favicon.ico
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: coaching.qmd
+        text: Coaching
+      - href: stats.qmd
+        text: Stats
+      - href: playing.qmd
+        text: Playing
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

@@ -1,0 +1,14 @@
+---
+format:
+  html: 
+    fontsize: 20pt
+---
+
+![](images/headshot.png){width=50% fig-align="center"}
+
+<h1 style="text-align:center;">James Henry</h1>
+
+After 7 years of playing professionally, and three years of coaching, I
+am looking for opportunities to further my career in professional and
+amateur hockey.
+

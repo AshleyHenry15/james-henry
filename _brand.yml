@@ -1,0 +1,20 @@
+color:
+  palette:
+    black: "#000000"
+    white: "#fff"
+  background: white
+  foreground: black
+  primary: black
+
+typography:
+  fonts:
+    - family: Open Sans
+      source: google
+  base: Open Sans
+  headings: Open Sans
+
+defaults:
+  bootstrap:
+    defaults: # defaults also supports a string as its value
+      link-decoration: underline
+      navbar-bg: "#000000"
