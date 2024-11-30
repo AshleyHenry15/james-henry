@@ -1,0 +1,12 @@
+{
+  "hash": "c4710a0d81ca69ff5ce36a5699144037",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "::: {#28a80cbb .cell execution_count=1}\n``` {.python .cell-code}\nimport matplotlib.pyplot as plt\n\n# Data\nwins = 55\nlosses = 44\not_losses = 10\ntotal_games = wins + losses + ot_losses\n\n# Labels and sizes for the pie chart\nlabels = ['Wins', 'Losses', 'Overtime Losses']\nsizes = [wins, losses, ot_losses]\ncolors = ['#4CAF50', '#F44336', '#FF9800']  # Green, Red, Orange for the slices\n\n# Plot the pie chart\nfig, ax = plt.subplots()\nax.pie(sizes, labels=labels, autopct='%1.1f%%', colors=colors, startangle=90, wedgeprops={'edgecolor': 'black'})\n\n# Title of the pie chart\nax.set_title('Win-Loss Record Distribution')\n\n# Equal aspect ratio ensures that pie chart is drawn as a circle.\nax.axis('equal')\n\n# Show the plot\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![](win-perc_files/figure-html/cell-2-output-1.png){width=540 height=409}\n:::\n:::\n\n\n",
+    "supporting": [
+      "win-perc_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

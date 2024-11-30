@@ -25,7 +25,7 @@ total_games = wins + losses + ot_losses
 # Labels and sizes for the pie chart
 labels = ['Wins', 'Losses', 'Overtime Losses']
 sizes = [wins, losses, ot_losses]
-colors = ['#77379A', '#AAB2B9', '#FF9800']  # Green, Red, Orange for the slices
+colors = ['#6c94ec', '#AAB2B9', '#f0ad4e']  # blue, gray, orange for the slices
 
 # Plot the pie chart
 fig, ax = plt.subplots()
@@ -48,6 +48,10 @@ plt.show()
 
 
 ## Player
+
+```{=html}
+<iframe width="780" height="500" src="https://www.eliteprospects.com/player/41672/james-henry" title="Quarto Documentation"></iframe>
+```
 
 | GP| G | A | PTS |
 |---|-|-|-|
