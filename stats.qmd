@@ -25,22 +25,23 @@ total_games = wins + losses + ot_losses
 # Labels and sizes for the pie chart
 labels = ['Wins', 'Losses', 'Overtime Losses']
 sizes = [wins, losses, ot_losses]
-colors = ['#6c94ec', '#AAB2B9', '#f0ad4e']  # blue, gray, orange for the slices
+colors = ['#6c94ec', '#AAB2B9', '#D6D8DA']  # blue, gray, orange for the slices
 
 # Plot the pie chart
-fig, ax = plt.subplots()
-ax.pie(sizes, labels=labels, autopct='%1.1f%%', colors=colors, startangle=90, wedgeprops={'edgecolor': 'black'})
+fig, ax = plt.subplots(figsize=(6, 6))  # Set the figure size (square to keep it circular)
+ax.pie(sizes, labels=labels, autopct='%1.1f%%', colors=colors, startangle=90, 
+       wedgeprops={'edgecolor': 'black'}, textprops={'fontsize': 12})  # Adjust label font size
 
 # Title of the pie chart
-ax.set_title('')
+#ax.set_title('Game Results', fontsize=16)  # Set title font size
 
 # Set background color to transparent for the figure and axes
 fig.patch.set_facecolor('none')   # Remove figure background color
 ax.set_facecolor('none')          # Remove axes background color
 
-
 # Equal aspect ratio ensures that pie chart is drawn as a circle.
 ax.axis('equal')
+
 
 # Show the plot
 plt.show()
